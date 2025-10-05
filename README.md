@@ -51,8 +51,6 @@ python spec_mapper/main.py --spec data/raw/spec.yaml
 3. Runner
 Run transformations and verify correctness:
 
-bash
-Copy code
 # JOLT example
 python runner/jolt_runner/main.py --input data/examples/input.json --jolt mapping.jolt --output data/examples/output.json
 
@@ -61,13 +59,9 @@ python runner/xslt_runner/main.py --input data/examples/input.xml --xslt mapping
 4. Learner
 Train the AI model with training data:
 
-bash
-Copy code
 python learner/train.py --data data/training/
 Predict new transformations:
 
-bash
-Copy code
 python learner/predict.py --input data/examples/input.json --output data/examples/output.json
 ✅ Key Features
 AI-assisted generation of transformation mappings.
@@ -90,5 +84,3 @@ Train the AI model in learner using real transformation triplets.
 ⚡ License
 This project is for internal use and experimentation. Adapt and extend as needed.
 
-pgsql
-Copy code
