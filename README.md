@@ -9,6 +9,7 @@
 
 The platform learns from existing input/output examples and transformation rules to predict new mappings.
 
+----
 ## 🗂️ Project Structure
 ...
 data-mapper-ai/
@@ -28,6 +29,7 @@ data-mapper-ai/
 │ └── usage.md
 │── README.md # This file
 ...
+----
 ## 🛠️ Getting Started
 
 ### 1. RepoHarvester
