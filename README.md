@@ -44,10 +44,10 @@ python spec_mapper/main.py --spec data/raw/spec.yaml
 ### 3. Runner
 Run transformations and verify correctness:
 
-# JOLT example
+#### JOLT example
 python runner/jolt_runner/main.py --input data/examples/input.json --jolt mapping.jolt --output data/examples/output.json
 
-# XSLT example
+#### XSLT example
 python runner/xslt_runner/main.py --input data/examples/input.xml --xslt mapping.xslt --output data/examples/output.xml
 ### 4. Learner
 Train the AI model with training data:
