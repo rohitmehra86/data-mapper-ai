@@ -85,6 +85,3 @@ python learner/predict.py --input data/examples/input.json --output data/example
 ## ⚡ License
 
 This project is for internal use and experimentation. Adapt and extend as needed.
-
-```
-```
