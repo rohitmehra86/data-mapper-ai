@@ -30,7 +30,6 @@ data-mapper-ai/
 │ ├── roadmap.md
 │ └── usage.md
 │── README.md # This file
----
 
 ## 🛠️ Getting Started
 
