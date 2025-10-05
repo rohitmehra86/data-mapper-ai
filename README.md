@@ -9,10 +9,9 @@
 
 The platform learns from existing input/output examples and transformation rules to predict new mappings.
 
----
 
 ## 🗂️ Project Structure
----
+
 data-mapper-ai/
 │── repo_harvester/ # Fetch connectors/specs from GitHub
 │── spec_mapper/ # Generate example input/output data
@@ -29,7 +28,7 @@ data-mapper-ai/
 │ ├── roadmap.md
 │ └── usage.md
 │── README.md # This file
----
+
 
 ## 🛠️ Getting Started
 
