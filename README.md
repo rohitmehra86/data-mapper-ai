@@ -1,4 +1,3 @@
-```markdown
 # Data-Mapper-AI
 
 ## 🚀 Overview
