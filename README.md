@@ -1,12 +1,11 @@
 # Data-Mapper-AI
 
 ## 🚀 Overview
-**Data-Mapper-AI** is an AI-powered platform to automatically generate **data transformation mappings**.  
-It is modular and extensible, supporting multiple transformation types like:
+**Data-Mapper-AI** is an AI-powered platform to automatically generate **data transformation mappings**. It is modular and extensible, supporting multiple transformation types like:
 
-- **JOLT** → JSON → JSON transformations  
-- **XSLT** → XML → XML transformations  
-- Future transformations (CSV, YAML, etc.)  
+- **JOLT** → JSON → JSON transformations
+- **XSLT** → XML → XML transformations
+- Future transformations (CSV, YAML, etc.)
 
 The platform learns from existing input/output examples and transformation rules to predict new mappings.
 
@@ -31,14 +30,19 @@ data-mapper-ai/
 │ └── usage.md
 │── README.md # This file
 
+
+---
+
 ## 🛠️ Getting Started
 
 ### 1. RepoHarvester
 Fetch OpenAPI/XSD specs and transformation files from GitHub:
-```bash
+
+```
 python repo_harvester/main.py --org your-github-org
 2. SpecMapper
 Generate example input/output JSON or XML from specs:
+
 
 python spec_mapper/main.py --spec data/raw/spec.yaml
 3. Runner
@@ -78,10 +82,3 @@ Train the AI model in learner using real transformation triplets.
 
 ⚡ License
 This project is for internal use and experimentation. Adapt and extend as needed.
-
-
----
-
-You can **copy all of this into a new file** called `README.md` in your project root.  
-
-If you want, I can also create a **shorter, one-page quick-start version** for your team to get started even faster. Do you want me to do that?
