@@ -1,3 +1,5 @@
+Markdown
+
 # Data-Mapper-AI
 
 ## 🚀 Overview
@@ -9,8 +11,11 @@
 
 The platform learns from existing input/output examples and transformation rules to predict new mappings.
 
-----
+---
+
 ## 🗂️ Project Structure
+**Suggestion:** Wrap the structure in a code block for correct, preserved rendering (especially on GitHub).
+
 data-mapper-ai/
 │── repo_harvester/ # Fetch connectors/specs from GitHub
 │── spec_mapper/ # Generate example input/output data
@@ -28,59 +33,64 @@ data-mapper-ai/
 │ └── usage.md
 │── README.md # This file
 
+
+---
+
 ## 🛠️ Getting Started
 
 ### 1. RepoHarvester
 Fetch OpenAPI/XSD specs and transformation files from GitHub:
 
+```bash
 python repo_harvester/main.py --org your-github-org
-
-### 2\. SpecMapper
-
+2. SpecMapper
 Generate example input/output JSON or XML from specs:
 
+Bash
+
 python spec_mapper/main.py --spec data/raw/spec.yaml
-
-### 3\. Runner
-
+3. Runner
 Run transformations and verify correctness:
+
+Bash
 
 # JOLT example
 python runner/jolt_runner/main.py --input data/examples/input.json --jolt mapping.jolt --output data/examples/output.json
 
 # XSLT example
 python runner/xslt_runner/main.py --input data/examples/input.xml --xslt mapping.xslt --output data/examples/output.xml
-
-### 4\. Learner
-
+4. Learner
 Train the AI model with training data:
 
-python learner/train.py --data data/training/
+Bash
 
+python learner/train.py --data data/training/
 Predict new transformations:
 
+Bash
+
 python learner/predict.py --input data/examples/input.json --output data/examples/output.json
+✅ Key Features
+Suggestion: Remove unnecessary leading spaces on the list items for standard Markdown rendering.
 
------
+AI-assisted generation of transformation mappings.
 
-## ✅ Key Features
+Extensible for multiple transformation formats (JSON, XML, etc.).
 
-  - **AI-assisted generation** of transformation mappings.
-  - **Extensible** for multiple transformation formats (JSON, XML, etc.).
-  - **Human-in-the-loop** for corrections and retraining.
-  - **Output-based verification** to ensure correctness.
+Human-in-the-loop for corrections and retraining.
 
------
+Output-based verification to ensure correctness.
 
-## 📚 Next Steps
+📚 Next Steps
+Suggestion: Remove unnecessary leading spaces on the list items.
 
-  - Implement real GitHub fetching logic in `repo_harvester`.
-  - Enhance `spec_mapper` to parse OpenAPI/XSD fully.
-  - Integrate real JOLT/XSLT execution in the `runner`.
-  - Train the AI model in `learner` using real transformation triplets.
+Implement real GitHub fetching logic in repo_harvester.
 
------
+Enhance spec_mapper to parse OpenAPI/XSD fully.
 
-## ⚡ License
+Integrate real JOLT/XSLT execution in the runner.
 
+Train the AI model in learner using real transformation triplets.
+
+⚡ License
 This project is for internal use and experimentation. Adapt and extend as needed.
