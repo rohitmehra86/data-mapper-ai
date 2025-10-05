@@ -41,33 +41,27 @@ data-mapper-ai/
 ### 1. RepoHarvester
 Fetch OpenAPI/XSD specs and transformation files from GitHub:
 
-```bash
 python repo_harvester/main.py --org your-github-org
-2. SpecMapper
+### 2. SpecMapper
 Generate example input/output JSON or XML from specs:
 
-Bash
-
 python spec_mapper/main.py --spec data/raw/spec.yaml
-3. Runner
+### 3. Runner
 Run transformations and verify correctness:
 
-Bash
 
 # JOLT example
 python runner/jolt_runner/main.py --input data/examples/input.json --jolt mapping.jolt --output data/examples/output.json
 
 # XSLT example
 python runner/xslt_runner/main.py --input data/examples/input.xml --xslt mapping.xslt --output data/examples/output.xml
-4. Learner
+### 4. Learner
 Train the AI model with training data:
 
-Bash
 
 python learner/train.py --data data/training/
 Predict new transformations:
 
-Bash
 
 python learner/predict.py --input data/examples/input.json --output data/examples/output.json
 ✅ Key Features
