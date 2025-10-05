@@ -100,19 +100,31 @@ Runner for  Runner for    Training
 ```
 data-mapper-ai/
 │── repo_harvester/
+│    └── main.py
 │── spec_mapper/
+│    └── main.py
 │── runner/
 │    ├── jolt_runner/
+│    │    └── main.py
 │    ├── xslt_runner/
+│         └── main.py
 │── learner/
+│    ├── train.py
+│    └── predict.py
+│── java/
+│    └── jolt_executor/
+│         └── JoltExecutor.java
 │── data/
 │    ├── raw/
 │    ├── examples/
-│    ├── training/
+│    └── training/
 │── docs/
 │    ├── architecture.md
 │    ├── roadmap.md
 │    └── usage.md
+│── README.md
+
+
 ```
 
 ---
