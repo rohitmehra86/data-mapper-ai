@@ -1,3 +1,8 @@
+I absolutely understand. Since I can't provide a direct downloadable file, the most convenient solution is to put the entire `README.md` content in a single **copyable code block**. Many platforms (like GitHub, text editors, and chat interfaces) provide a **"Copy" button** for these blocks.
+
+Here is the complete, corrected `README.md` content, ready for you to copy with a single click.
+
+```markdown
 # Data-Mapper-AI
 
 ## 🚀 Overview
@@ -13,24 +18,26 @@ The platform learns from existing input/output examples and transformation rules
 
 ## 🗂️ Project Structure
 
-Path	Type	Description
-data-mapper-ai/	Directory	Project Root
-├── repo_harvester/	Directory	Fetch connectors/specs from GitHub
-├── spec_mapper/	Directory	Generate example input/output data
-├── runner/	Directory	Execute transformations
-│ ├── jolt_runner/	Directory	JOLT transformations
-│ └── xslt_runner/	Directory	XSLT transformations
-├── learner/	Directory	AI training and prediction
-├── data/	Directory	Stores all data
-│ ├── raw/	Directory	Raw specifications
-│ ├── examples/	Directory	Input/output examples
-│ └── training/	Directory	AI training data
-├── docs/	Directory	Documentation
-│ ├── architecture.md	File	Architecture documentation
-│ ├── roadmap.md	File	Project roadmap
-│ └── usage.md	File	Usage guide
-└── README.md	File	Project overview
+```
 
+data-mapper-ai/
+│── repo\_harvester/ \# Fetch connectors/specs from GitHub
+│── spec\_mapper/ \# Generate example input/output data
+│── runner/ \# Execute transformations
+│ ├── jolt\_runner/ \# JOLT transformations
+│ ├── xslt\_runner/ \# XSLT transformations
+│── learner/ \# AI training and prediction
+│── data/ \# Stores all raw, examples, and training data
+│ ├── raw/
+│ ├── examples/
+│ ├── training/
+│── docs/ \# Documentation
+│ ├── architecture.md
+│ ├── roadmap.md
+│ └── usage.md
+│── README.md \# This file
+
+````
 
 ---
 
@@ -39,47 +46,67 @@ data-mapper-ai/	Directory	Project Root
 ### 1. RepoHarvester
 Fetch OpenAPI/XSD specs and transformation files from GitHub:
 
-```
+```bash
 python repo_harvester/main.py --org your-github-org
-2. SpecMapper
+````
+
+### 2\. SpecMapper
+
 Generate example input/output JSON or XML from specs:
 
-
+```bash
 python spec_mapper/main.py --spec data/raw/spec.yaml
-3. Runner
+```
+
+### 3\. Runner
+
 Run transformations and verify correctness:
 
-
+```bash
 # JOLT example
 python runner/jolt_runner/main.py --input data/examples/input.json --jolt mapping.jolt --output data/examples/output.json
 
 # XSLT example
 python runner/xslt_runner/main.py --input data/examples/input.xml --xslt mapping.xslt --output data/examples/output.xml
-4. Learner
+```
+
+### 4\. Learner
+
 Train the AI model with training data:
 
-
+```bash
 python learner/train.py --data data/training/
+```
+
 Predict new transformations:
 
+```bash
 python learner/predict.py --input data/examples/input.json --output data/examples/output.json
-✅ Key Features
-AI-assisted generation of transformation mappings.
+```
 
-Extensible for multiple transformation formats (JSON, XML, etc.).
+-----
 
-Human-in-the-loop for corrections and retraining.
+## ✅ Key Features
 
-Output-based verification to ensure correctness.
+  - **AI-assisted generation** of transformation mappings.
+  - **Extensible** for multiple transformation formats (JSON, XML, etc.).
+  - **Human-in-the-loop** for corrections and retraining.
+  - **Output-based verification** to ensure correctness.
 
-📚 Next Steps
-Implement real GitHub fetching logic in repo_harvester.
+-----
 
-Enhance spec_mapper to parse OpenAPI/XSD fully.
+## 📚 Next Steps
 
-Integrate real JOLT/XSLT execution in the runner.
+  - Implement real GitHub fetching logic in `repo_harvester`.
+  - Enhance `spec_mapper` to parse OpenAPI/XSD fully.
+  - Integrate real JOLT/XSLT execution in the `runner`.
+  - Train the AI model in `learner` using real transformation triplets.
 
-Train the AI model in learner using real transformation triplets.
+-----
 
-⚡ License
+## ⚡ License
+
 This project is for internal use and experimentation. Adapt and extend as needed.
+
+```
+```
