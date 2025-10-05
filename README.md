@@ -13,21 +13,31 @@ The platform learns from existing input/output examples and transformation rules
 ## 🗂️ Project Structure
 ```
 data-mapper-ai/
-│── repo_harvester/ # Fetch connectors/specs from GitHub
-│── spec_mapper/ # Generate example input/output data
-│── runner/ # Execute transformations
-│ ├── jolt_runner/ # JOLT transformations
-│ ├── xslt_runner/ # XSLT transformations
-│── learner/ # AI training and prediction
-│── data/ # Stores all raw, examples, and training data
-│ ├── raw/
-│ ├── examples/
-│ ├── training/
-│── docs/ # Documentation
-│ ├── architecture.md
-│ ├── roadmap.md
-│ └── usage.md
-│── README.md # This file
+│── repo_harvester/
+│    └── main.py
+│── spec_mapper/
+│    └── main.py
+│── runner/
+│    ├── jolt_runner/
+│    │    └── main.py
+│    ├── xslt_runner/
+│         └── main.py
+│── learner/
+│    ├── train.py
+│    └── predict.py
+│── java/
+│    └── jolt_executor/
+│         └── JoltExecutor.java
+│── data/
+│    ├── raw/
+│    ├── examples/
+│    └── training/
+│── docs/
+│    ├── architecture.md
+│    ├── roadmap.md
+│    └── usage.md
+│── README.md
+
 
 ```
 
